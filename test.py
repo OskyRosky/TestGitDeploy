@@ -52,3 +52,14 @@ data.plot.bar(x="A", y="B")
 
 # Plot the bar chart
 plt.show()
+
+
+#### Test 3
+
+import pandas as pd
+
+# Create a DataFrame
+df = pd.DataFrame({"Dog Name": ["Scooby-Doo", "Simba", "Laika"], "Owner": ["Fred", "Scar", "Yuri"], "Resident State": ["California", "Florida", "New York"]})
+
+# Print the DataFrame
+print(df)
