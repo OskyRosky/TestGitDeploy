@@ -53,3 +53,34 @@ df = pd.DataFrame({"Dog Name": ["Scooby-Doo", "Simba", "Laika"], "Owner": ["Fred
 
 # Print the DataFrame
 print(df)
+
+
+### Test 3
+
+import matplotlib.pyplot as plt
+
+# Create a list of years
+years = list(range(1923, 2023))
+
+# Create a list of values
+values = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+# Plot the line
+plt.plot(years, values)
+
+# Add a title
+plt.title("Plot Line with 100 Years")
+
+# Add labels to the axes
+plt.xlabel("Years")
+plt.ylabel("Values")
+
+# Show the plot
+plt.show()
+
+plt.plot(years, values, linestyle="--", color="red", linewidth=2)
+
+plt.plot(years, values, label="Values")
+plt.legend()
+
+plt.savefig("plot.png")
