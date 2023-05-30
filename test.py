@@ -15,3 +15,40 @@ df = pd.DataFrame({'date': dates, 'time': dates.time, 'energy': energy})
 # Print the DataFrame
 print(df)
 
+###### 
+
+# Test 2: barchart
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate the simulated data
+data = np.random.randint(0, 100, (10, 2))
+
+# Create a bar chart
+plt.bar(data[:, 0], data[:, 1], color="blue")
+
+# Plot the bar chart
+plt.show()
+
+import seaborn as sns
+
+# Generate the simulated data
+data = np.random.randint(0, 100, (10, 2))
+
+# Create a bar chart
+sns.barplot(x=data[:, 0], y=data[:, 1])
+
+# Plot the bar chart
+plt.show()
+
+import pandas as pd
+
+# Generate the simulated data
+data = pd.DataFrame({"A": np.random.randint(0, 100, (10,)), "B": np.random.randint(0, 100, (10,))})
+
+# Create a bar chart
+data.plot.bar(x="A", y="B")
+
+# Plot the bar chart
+plt.show()
