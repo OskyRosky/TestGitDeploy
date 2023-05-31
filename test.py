@@ -102,3 +102,12 @@ df = pd.DataFrame(data)
 
 # Print the DataFrame
 print(df)
+
+import pandas as pd
+import seaborn as sns
+
+categories = ["A", "B", "C", "D"]
+
+df = pd.DataFrame({"Category": np.random.choice(categories, 100)})
+
+sns.pieplot(df["Category"].value_counts(), labels=categories)
