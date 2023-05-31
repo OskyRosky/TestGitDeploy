@@ -84,3 +84,21 @@ plt.plot(years, values, label="Values")
 plt.legend()
 
 plt.savefig("plot.png")
+
+
+
+
+############################### Último código o etapa
+
+import pandas as pd
+
+# Create a list of dictionaries to store the data
+data = [{'Name': 'John', 'Age': 25, 'Country': 'United States'},
+        {'Name': 'David', 'Age': 27, 'Country': 'Canada'},
+        {'Name': 'Michael', 'Age': 30, 'Country': 'United Kingdom'}]
+
+# Create a DataFrame from the list of dictionaries
+df = pd.DataFrame(data)
+
+# Print the DataFrame
+print(df)
